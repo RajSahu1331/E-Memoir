@@ -1,3 +1,5 @@
+// Home.jsx
+
 import { useEffect } from 'react';
 import { HashLoader } from 'react-spinners';
 import { usePostsContext } from '../hooks/usePostsContext.js';
@@ -38,7 +40,7 @@ const Home = () => {
 
     return (
         <>
-            <div>
+            <div className="homeContainer">
                 <h1> Posts </h1>
 
                 <ul className={styles.postList}>

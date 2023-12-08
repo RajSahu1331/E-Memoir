@@ -1,18 +1,18 @@
 import { Link } from 'react-router-dom';
 import { useAuthContext } from '../hooks/useAuthContext';
 import { useLogout } from '../hooks/useLogout.js';
+import styles from '../styles/styles.module.scss'
 
 const NavBar = () => {
     const { user } = useAuthContext();
     const { logout } = useLogout();
-
     const handleClick = () => logout();
 
     return (
         <header>
-            <nav>
+            <nav className={styles.header}>
                 <ul>
-                    <li> 
+                    <li>
                         <Link to="/"> Home </Link>
                     </li>
                 </ul>
@@ -22,7 +22,7 @@ const NavBar = () => {
 
             {user ? (
                 <div>
-                    <span>{ user.email }</span>
+                    <span>{user.email}</span>
                     <button onClick={handleClick}>
                         Logout
                     </button>

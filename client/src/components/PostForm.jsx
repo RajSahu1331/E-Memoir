@@ -8,6 +8,7 @@ const PostForm = () => {
     const { dispatch } = usePostsContext();
     const { user } = useAuthContext();
 
+
     const onSubmit = async data => {
         const post = {
             date: data.date,
@@ -46,6 +47,7 @@ const PostForm = () => {
                 <div>
                     <h3> Create a post </h3>
                 </div>
+
                 <input
                     type="text"
                     {...register("title", { required: 'required field' })}
