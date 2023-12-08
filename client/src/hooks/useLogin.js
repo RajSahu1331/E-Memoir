@@ -13,7 +13,7 @@ export const useLogin = () => {
 
     try {
       const response = await fetch(
-        "https://e-memoir-diary.onrender.com/api/user/login",
+        "/api/user/login",
         {
           method: "POST",
           headers: {

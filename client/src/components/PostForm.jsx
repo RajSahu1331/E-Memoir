@@ -17,7 +17,7 @@ const PostForm = () => {
         };
 
         try {
-            const response = await fetch('https://e-memoir-diary.onrender.com/api/posts', {
+            const response = await fetch('/api/posts', {
                 method: 'POST',
                 body: JSON.stringify(post),
                 headers: {

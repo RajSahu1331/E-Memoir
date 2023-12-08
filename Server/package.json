@@ -1,7 +1,7 @@
 {
   "name": "E-Memoir",
   "version": "1.0.0",
-  "description": "E-Diary",
+  "description": "Diary",
   "main": "server.js",
   "type": "module",
   "scripts": {
