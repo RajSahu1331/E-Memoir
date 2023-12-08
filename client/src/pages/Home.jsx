@@ -14,7 +14,7 @@ const Home = () => {
 
     useEffect(() => {
         const fetchPosts = async () => {
-            const response = await fetch('/api/posts', {
+            const response = await fetch('https://e-memoir-diary.onrender.com/api/posts', {
                 headers: {
                     'Authorization': `Bearer ${user.token}`
                 }
