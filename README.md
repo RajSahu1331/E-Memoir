@@ -1,6 +1,3 @@
-Sure, here is the README content formatted for direct copy-pasting into a `README.md` file:
-
-```markdown
 # E-Memoir Project Readme
 
 ## Overview
