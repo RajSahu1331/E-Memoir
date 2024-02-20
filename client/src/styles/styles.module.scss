@@ -177,14 +177,23 @@
 
 .homeContainer {
     min-height: 100vh;
+<<<<<<< HEAD
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* Divide the screen into two columns */
+=======
+    display: flex;
+    flex-direction: column;
+>>>>>>> 6f4f9cbf364843a30155649354dc71b07d8c7e16
     align-items: center;
     justify-content: center;
     padding: 20px;
     box-sizing: border-box;
     color: #fff;
+<<<<<<< HEAD
+=======
+    /* Text color on the background */
+>>>>>>> 6f4f9cbf364843a30155649354dc71b07d8c7e16
     position: relative;
 
     &::before {
@@ -195,6 +204,10 @@
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
+<<<<<<< HEAD
+=======
+        /* Adjust the overlay color and opacity */
+>>>>>>> 6f4f9cbf364843a30155649354dc71b07d8c7e16
     }
 }
 
