@@ -20,21 +20,21 @@ export const useLogin = () => {
         body: JSON.stringify({ email, password }),
       });
 
-      const json = await response.json();
-
       if (!response.ok) {
+        const json = await response.json();
         setLoading(false);
-        setError(json.error);
+        setError(json.error || "Login failed"); // Handle the error message from the server
+        return;
       }
 
-      if (response.ok) {
-        localStorage.setItem("user", JSON.stringify(json));
-        dispatch({ type: "LOGIN", payload: json });
-        setLoading(false);
-      }
+      const json = await response.json();
+      localStorage.setItem("user", JSON.stringify(json));
+      dispatch({ type: "LOGIN", payload: json });
+      setLoading(false);
     } catch (err) {
       setLoading(false);
-      console.log(err);
+      console.error("An error occurred:", err);
+      setError("An error occurred during login"); // Handle other errors
     }
   };
 
