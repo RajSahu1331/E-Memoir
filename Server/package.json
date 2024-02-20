@@ -1,13 +1,7 @@
 {
-<<<<<<< HEAD
   "name": "diary-backend",
   "version": "1.0.0",
   "description": "Diary backend server",
-=======
-  "name": "E-Memoir",
-  "version": "1.0.0",
-  "description": "Diary",
->>>>>>> 6f4f9cbf364843a30155649354dc71b07d8c7e16
   "main": "server.js",
   "type": "module",
   "scripts": {
@@ -16,11 +10,7 @@
     "dev": "nodemon server.js",
     "build": "npm install"
   },
-<<<<<<< HEAD
-  "author": "Umar Khan",
-=======
-  "author": "Raj Kumar Sahu",
->>>>>>> 6f4f9cbf364843a30155649354dc71b07d8c7e16
+  "author": "Raj Sahu",
   "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.1.0",
